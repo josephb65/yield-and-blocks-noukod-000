@@ -1,11 +1,11 @@
-def hello_t(array)
+def hello_t(arr)
    if block_given?
  counter = 0
-  while i < array.length
-    yield array[i]
-    i = i + 1
+  while counter < arr.length
+    yield arr[counter]
+    counter += 1
   end
-  array
+  arr
 else
   puts "Hey! No block was given!"
   end
